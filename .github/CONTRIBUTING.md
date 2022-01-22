@@ -1,5 +1,39 @@
 # Contributor guidelines template
 
+## Project commands
+
+### Building
+
+`npm run nx build <project-name>`
+
+If you want to build the docs, run `npm run nx build docs`. This will build the docs and all of its dependencies.
+
+In order to build the components, you can run `npm run nx build components`.
+
+If you want to build everything, run `npm run nx run-many --target=build --all`.
+
+### Serving the docs
+
+`npm run nx serve docs`
+
+**NOTE: Currently you must build before serving**
+
+### Running the tests
+
+We have two types of tests: `unit` and `e2e`.
+
+In order to run unit tests run: `npm run nx test <project-name>`.
+
+In order to run e2e tests run: `npm run nx e2e <project-name>`.
+
+You can also run the commands for all relevant projects using the `run-many` command: `npm run nx run-many --target=test --all`.
+
+### Linting
+
+We have two types of linting. Code linting and scss linting.  The target names are `lint` and `stylelint` respectively.
+
+Usage example: `npm run nx stylelint themes`.
+
 ## What do I need to know to help?
 
 If you are looking to help to with a code contribution our project uses [Typescript](https://www.typescriptlang.org), [Lit](https://lit.dev) and [Sass](https://sass-lang.com). If you don't feel ready to make a code contribution yet, no problem! You can also check out the [documentation issues](https://github.com/Vonage/vivid-3/labels/Type%3A%20documentation) or the [design issues](https://github.com/Vonage/vivid-3/labels/Type%3A%20Design%20%F0%9F%8E%A8) that we have.
