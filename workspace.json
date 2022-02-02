@@ -3,7 +3,9 @@
   "projects": {
     "components": "libs/components",
     "docs": "apps/docs",
+    "nx-plugins-vivid-nx-plugins-e2e": "apps/nx-plugins/vivid-nx-plugins-e2e",
     "shared": "libs/shared",
-    "styles": "libs/styles"
+    "styles": "libs/styles",
+    "vivid-nx-plugins": "libs/vivid-nx-plugins"
   }
 }

@@ -1,0 +1,56 @@
+{
+  "root": "libs/vivid-nx-plugins",
+  "sourceRoot": "libs/vivid-nx-plugins/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/vivid-nx-plugins/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/vivid-nx-plugins"],
+      "options": {
+        "jestConfig": "libs/vivid-nx-plugins/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "build": {
+      "executor": "@nrwl/node:package",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/vivid-nx-plugins",
+        "tsConfig": "libs/vivid-nx-plugins/tsconfig.lib.json",
+        "packageJson": "libs/vivid-nx-plugins/package.json",
+        "main": "libs/vivid-nx-plugins/src/index.ts",
+        "assets": [
+          "libs/vivid-nx-plugins/*.md",
+          {
+            "input": "./libs/vivid-nx-plugins/src",
+            "glob": "**/!(*.ts)",
+            "output": "./src"
+          },
+          {
+            "input": "./libs/vivid-nx-plugins/src",
+            "glob": "**/*.d.ts",
+            "output": "./src"
+          },
+          {
+            "input": "./libs/vivid-nx-plugins",
+            "glob": "generators.json",
+            "output": "."
+          },
+          {
+            "input": "./libs/vivid-nx-plugins",
+            "glob": "executors.json",
+            "output": "."
+          }
+        ]
+      }
+    }
+  },
+  "tags": []
+}
