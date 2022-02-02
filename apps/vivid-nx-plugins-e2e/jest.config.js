@@ -1,6 +1,6 @@
 module.exports = {
-  displayName: 'nx-plugins-vivid-nx-plugins-e2e',
-  preset: '../../../jest.preset.js',
+  displayName: 'vivid-nx-plugins-e2e',
+  preset: '../../jest.preset.js',
   globals: {
     'ts-jest': {
       tsconfig: '<rootDir>/tsconfig.spec.json',
@@ -10,5 +10,5 @@ module.exports = {
     '^.+\\.[tj]s$': 'ts-jest',
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../../coverage/apps/nx-plugins/vivid-nx-plugins-e2e',
+  coverageDirectory: '../../coverage/apps/vivid-nx-plugins-e2e',
 };
