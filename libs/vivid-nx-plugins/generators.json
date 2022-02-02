@@ -1,12 +1,12 @@
 {
   "$schema": "http://json-schema.org/schema",
-  "name": "nx-plugins-vivid-nx-plugins",
+  "name": "vivid-nx-plugins",
   "version": "0.0.1",
   "generators": {
-    "nx-plugins-vivid-nx-plugins": {
-      "factory": "./src/generators/nx-plugins-vivid-nx-plugins/generator",
-      "schema": "./src/generators/nx-plugins-vivid-nx-plugins/schema.json",
-      "description": "nx-plugins-vivid-nx-plugins generator"
+    "vivid-component": {
+      "factory": "./src/generators/vivid-component/generator",
+      "schema": "./src/generators/vivid-component/schema.json",
+      "description": "vivid-component generator"
     }
   }
 }
