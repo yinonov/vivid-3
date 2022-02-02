@@ -1,0 +1,9 @@
+{
+  "executors": {
+    "bump": {
+      "implementation": "./bump.executor",
+      "schema": "./schema.json",
+      "description": "Bumps a project's version according to conventional commit or given version"
+    }
+  }
+}

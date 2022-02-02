@@ -9,6 +9,12 @@
         "command": "./scripts/visual-tests/run.tests.in.container.sh {args.task}"
       }
     },
+    "bump": {
+      "executor": "./tools/executors/bump:bump",
+      "options": {
+        "version": "1.5.3"
+      }
+    },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
