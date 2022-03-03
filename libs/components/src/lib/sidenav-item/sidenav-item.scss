@@ -1,10 +1,12 @@
 @use '../../../../shared/src/lib/sass/mixins/typography' as typography;
 @use '../../../../../node_modules/@vonage/vivid-tokens/dist/sass/themes/consts' as theme-consts;
+@use '../../../../shared/src/lib/sass/mixins/states' as states;
 
 .control {
 	$min-block-size: 40px;
 	$gap: 8px;
 	@include typography.typography-cat-shorthand('body-2');
+  @include states.state;
 
 	position: relative;
 	display: inline-flex;
