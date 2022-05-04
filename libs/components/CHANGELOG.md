@@ -1,8 +1,16 @@
 # Change Log - @vonage/vivid
 
-This log was last generated on Tue, 03 May 2022 20:34:28 GMT and should not be manually modified.
+This log was last generated on Wed, 04 May 2022 09:42:18 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 3.0.0-nouse.0
+
+Wed, 04 May 2022 09:42:18 GMT
+
+### Changes
+
+- Fix the release command (yonatan.kra@vonage.com)
 
 ## 3.0.0-next.7
 

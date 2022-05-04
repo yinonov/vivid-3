@@ -2,6 +2,29 @@
   "name": "@vonage/vivid",
   "entries": [
     {
+      "date": "Wed, 04 May 2022 09:42:18 GMT",
+      "tag": "@vonage/vivid_v3.0.0-nouse.0",
+      "version": "3.0.0-nouse.0",
+      "comments": {
+        "prerelease": [
+          {
+            "author": "yonatan.kra@vonage.com",
+            "package": "@vonage/vivid",
+            "commit": "5dea866dc9a1aac52a100ffbecdecf4bc31ed1be",
+            "comment": "Fix the release command"
+          }
+        ],
+        "none": [
+          {
+            "author": "yinon@hotmail.com",
+            "package": "@vonage/vivid",
+            "commit": "0436058e1c6b43a0f0c0f7efd1ee7a2f22304ce5",
+            "comment": "fix outline tokens reference and introduce a new 'duotone' value for appearance"
+          }
+        ]
+      }
+    },
+    {
       "date": "Tue, 03 May 2022 20:34:28 GMT",
       "tag": "@vonage/vivid_v3.0.0-next.7",
       "version": "3.0.0-next.7",
