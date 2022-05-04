@@ -30,13 +30,11 @@ jobs:
         run: npm ci
 
       - name: Build Components
-        run: |
-          npx nx run components:build
-          npm publish --tag nouse --access public --//registry.npmjs.org/:_authToken=${{ secrets.NPM_VVD_VNG_AUTOMATION_TOKEN }}
+        run: npx nx run components:build
 
-#      - name: Publish
-#        run: npm publish --tag nouse --access public --//registry.npmjs.org/:_authToken=${{ secrets.NPM_VVD_VNG_AUTOMATION_TOKEN }}
-#        env:
-#          NODE_AUTH_TOKEN: ${{ secrets.NPM_VVD_VNG_AUTOMATION_TOKEN }}
+      - name: Publish
+        run: npm publish --tag nouse --access public --//registry.npmjs.org/:_authToken=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
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_VVD_VNG_AUTOMATION_TOKEN }}
 
 
